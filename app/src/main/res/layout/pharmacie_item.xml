@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="10dp"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_margin="3dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageIV"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="2dp"
+            android:src="@drawable/pharmacy" />
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/imageIV"
+            android:layout_toRightOf="@id/imageIV"
+            android:text="D"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/adresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nom"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/imageIV"
+            android:layout_toRightOf="@id/imageIV"
+            android:text="adresse"
+            android:textColor="#a9a9a9"
+            android:textSize="15sp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/telephone"
+            android:layout_width="136dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/imageIV"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/btn_design"
+            android:backgroundTint="#030303"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="+212 6062-49739"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/zone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adresse"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@id/imageIV"
+            android:layout_toRightOf="@id/imageIV"
+            android:text="zone"
+            android:textColor="#a9a9a9"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/garde"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_below="@id/adresse"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="192dp"
+            android:layout_marginBottom="53dp"
+            android:text="zone"
+            android:textColor="#E53935"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ville"
+            android:layout_width="160dp"
+            android:layout_height="19dp"
+            android:layout_below="@id/adresse"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="142dp"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/imageIV"
+            android:layout_toRightOf="@id/imageIV"
+            android:text="ville"
+            android:textColor="#a9a9a9"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/butt"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/imageIV"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/mark"
+            android:gravity="center" />
+
+
+    </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
